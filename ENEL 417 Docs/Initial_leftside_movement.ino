@@ -78,6 +78,10 @@ void loop() {
   }
   if (GamePad.isSquarePressed())
   {
+    moveServoLeft(0,130);
+    moveServoLeft(1,90);
+    moveServoRight(7,140);
+    moveServoRight(6,40);
     Serial.print("Square");
   }
 
@@ -89,7 +93,7 @@ void loop() {
 
   if (GamePad.isCrossPressed())
   {
-    RippleGait();
+    WaveGait();
     Serial.print("Cross");
   }
 
@@ -287,10 +291,11 @@ void QuadrupedGait()
   moveleg3();
   moveleg6();
   moveleg2();
+  setDefaultPositions();
   }
 }
 
-void RippleGait()
+void WaveGait()
 {
   for(int i = 0; i < 2;i++)
   {
