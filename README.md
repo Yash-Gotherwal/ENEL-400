@@ -11,3 +11,5 @@ ENEL 417 docs - Project Documentation and Arduino sketches for Hexapod.
 -Hm10_base_sketch - inital code for testing bluetooth module using breadboard circuit
 
 -Prototype_leg_with_individual_servo - initial code for testing leg movement using servodriver and bluetooth
+
+Datasheets - component datasheets
