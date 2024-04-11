@@ -1,6 +1,6 @@
 Capstone project repository
 
-Schematics - Design Schematics with variations
+Schematics - Design Schematics, pictorial diagram and flowchart
 
 Hexapod 3d design STL - STL files for 3d printing
 
