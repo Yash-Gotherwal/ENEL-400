@@ -1,6 +1,6 @@
 /*Final code for Hexapod robot
-Yash Gotherwal
-200420786
+Student name: Yash Gotherwal
+Student ID: 200420786
 
 This is the final code for the hexapod robot for my final capstone project.
 
@@ -16,14 +16,13 @@ The final commit includes cleaning up code and adding documentation and comments
 #define INCLUDE_GAMEPAD_MODULE
 #include <Dabble.h>
 
-// called this way, it uses the default address 0x40
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x40);  //Initialize servodriver for left side legs with address (0x40)
 Adafruit_PWMServoDriver pwm1 = Adafruit_PWMServoDriver(0x41); //Initialize servodriver for right side legs with address (0x41)
-#define SERVOMIN  140 // This is the 'minimum' pulse length count (out of 4096)
+#define SERVOMIN  140 // This is the 'minimum' pulse length count (out of 4096)  
 #define SERVOMAX  620 // This is the 'maximum' pulse length count (out of 4096)
 #define SERVO_FREQ 60 // Analog servos run at ~50 Hz updates
 
-// our servo # counter
+//servo # counter
 const int servoCountLeft = 9;
 const int servoPinsLeft[9] = {0, 1, 2, 3, 4, 5, 6, 7, 8}; //Array to store left side servos
 const int servoCountRight = 9;
@@ -51,7 +50,7 @@ void setup() {
   Serial.println("8 channel Servo test!");
   Dabble.begin(9600);
 
-  pwm.begin();  //begin serial communication
+  pwm.begin();  //begin serial communication for servo drivers
   pwm1.begin();
  
   pwm.setOscillatorFrequency(25000000);
